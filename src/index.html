@@ -14,20 +14,30 @@
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
 
-      <fieldset class="personalInfo chapter" name="personalInfo">
+      <fieldset class="personal-info chapter" name="personal-info">
         <legend>Personal information</legend>
 
         <div class="block">
           <label for="surname">
             Surname:
-            <input type="text" name="surname" id="surname">
+            <input
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="off"
+            >
           </label>
         </div>
 
         <div class="block">
-          <label for="name">
+          <label for="first-name">
             Name:
-            <input type="text" name="name" id="name">
+            <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            autocomplete="off"
+            >
           </label>
         </div>
 
@@ -50,20 +60,18 @@
             Full date of birth:
             <input
             type="date"
-            name="dateOfBirth"
+            name="date-birth"
             id="dateOfBirth"
-            min="1934-03-23"
-            max="2021-03-24"
             >
           </label>
         </div>
 
-        <div class="block lastBlock">
-          <label class="lastElement" for="termsOfAgreement">
+        <div class="block last-block">
+          <label class="last-element" for="termsOfAgreement">
             I accept the term of the agreement:
             <input
             type="checkbox"
-            name="termsOfAgreement"
+            name="agreement"
             id="termsOfAgreement"
             required
             >
@@ -83,11 +91,12 @@
             name="email"
             id="email"
             placeholder="email@example.com"
+            autocomplete="off"
             >
           </label>
         </div>
 
-        <div class="block lastBlock">
+        <div class="block last-block">
           <label class="lastElement" for="password">
             Password:
             <input
@@ -95,7 +104,9 @@
             name="password"
             id="password"
             minlength="6"
-            maxlength="16">
+            maxlength="16"
+            autocomplete="off"
+            >
           </label>
         </div>
       </fieldset>
@@ -107,11 +118,21 @@
         <div class="block">
           Do you love cats?
           <label for="catsYes">
-            <input type="radio" name="catsYes" id="catsYes">
+            <input
+            type="radio"
+            name="cats"
+            id="catsYes"
+            checked
+            >
             Yes
           </label>
+
           <label for="catsNo">
-            <input type="radio" name="catsYes" id="catsNo">
+            <input
+            type="radio"
+            name="cats"
+            id="catsNo"
+            >
             No
           </label>
         </div>
@@ -119,14 +140,22 @@
         <div class="block">
           <label for="favColor">
             What is your favorite color?
-            <input type="color" name="favColor" id="favColor">
+            <input
+            type="color"
+            name="favColor"
+            id="favColor"
+            >
           </label>
         </div>
 
         <div class="block">
           <label for="timeToSleep">
             What time do you go to bed?
-            <input type="time" name="timeToSleep" id="timeToSleep">
+            <input
+            type="time"
+            name="time-sleep"
+            id="timeToSleep"
+            >
           </label>
         </div>
 
@@ -147,12 +176,12 @@
         </div>
 
 
-        <div class="block lastBlock">
+        <div class="block last-block">
           <label for="rateOfWork">
             How do you rate oue work?
             <input
             type="range"
-            name="rateOfWork"
+            name="rate-work"
             id="rateOfWork"
             min="1"
             max="10"
@@ -168,11 +197,15 @@
         <div class="block">
           Comments
           <label for="comments">
-            <textarea name="comments" id="comments"></textarea>
+            <textarea
+            name="comments"
+            id="comments"
+            autocomplete="off"
+            ></textarea>
           </label>
         </div>
 
-        <div class="block lastBlock">
+        <div class="block last-block">
           <label for="recomendation">
             Would you recomended us?
             <select name="recomendation" id="recomendation">
@@ -184,7 +217,11 @@
       </fieldset>
 
 
-      <button class="btnSubmit" type="submit" name="submit">Submit</button>
+      <button
+      class="btn-submit"
+      type="submit"
+      name="submit"
+      >Submit</button>
     </form>
 
 
