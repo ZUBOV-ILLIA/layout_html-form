@@ -1,1 +1,16 @@
-/* styles go here */
+.chapter {
+  margin-bottom: 20px;
+}
+
+.block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.last-block {
+  margin-bottom: 0;
+}
+
+.btn-submit {
+  margin-top: 5px;
+}
